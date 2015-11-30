@@ -1,19 +1,19 @@
-events = $(".block_calendar_upcoming .content .event > a");
+var tickpath = chrome.extension.getURL('tick.png');
+events = $(".block_calendar_upcoming .content .event");
 
 events.each(function() {
   checkAssignment($(this));
 });
 
 function checkAssignment(event) {
-  var name = event.text()
+	var eventlink = event.find("> a");
+  var name = eventlink.text();
   var handler = function(data) {
-    var submissionstatussubmitted = $(data).find('.submissionstatussubmitted')
+    var submissionstatussubmitted = $(data).find('.submissionstatussubmitted');
     if (submissionstatussubmitted.length >= 1) {
-      console.log(name + ": submitted");
-      event.parent().css("background-color", "#7AFF7A")
-    } else {
-      console.log(name + ": not submitted");
+			var img = event.find(".icon > img");
+			img.attr("src" , tickpath);
     }
   };
-  $.get(event.attr('href'), handler);
+  $.get(eventlink.attr('href'), handler);
 }

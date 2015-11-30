@@ -11,5 +11,6 @@
   }],
   "permissions": [
     "*://elearning.tgm.ac.at/*", "tabs", "webNavigation"
-  ]
+		],
+		"web_accessible_resources": ["tick.png"]
 }
