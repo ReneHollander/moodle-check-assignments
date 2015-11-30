@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "moodle-tick-deadlines",
+  "description": "Checks the deadlines on the Moodle frontpage and ticks or hides them if they are done.",
+  "version": "0.0.1",
+  "content_scripts": [{
+    "matches": ["*://elearning.tgm.ac.at/my/"],
+    "js": ["jquery.js", "content.js"],
+    "run_at": "document_end"
+  }],
+  "permissions": [
+    "*://elearning.tgm.ac.at/*", "tabs", "webNavigation"
+  ]
+}
