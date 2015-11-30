@@ -7,7 +7,7 @@
   "content_scripts": [{
     "matches": ["*://elearning.tgm.ac.at/my/"],
     "js": ["jquery.js", "content.js"],
-    "run_at": "document_end"
+    "run_at": "document_idle"
   }],
   "permissions": [
     "*://elearning.tgm.ac.at/*", "tabs", "webNavigation"
