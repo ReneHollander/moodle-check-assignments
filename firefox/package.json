@@ -1,0 +1,16 @@
+{
+  "title": "moodle-check-assignments",
+  "name": "moodle-tick-assignments",
+  "version": "1.0.0",
+  "description": "Checks the deadlines on the Moodle frontpage and ticks or hides them if they are done.",
+  "main": "index.js",
+  "author": "",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

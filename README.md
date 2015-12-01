@@ -1,19 +1,25 @@
 moodle-check-assignments
 ========================
 
-This simple Chrome extensions checks if the assignments on the front page are submitted and marks them with green color if they are.
+This simple Chrome and Firefox extensions checks if the assignments on the front page are submitted and marks them with green color if they are.
 
-# Installation
+# Installation Chrome
 * Change the URL of the targeted Moodle installation in manifest.json
 * Go to Chrome extensions page
 * Enable Developer mode
-* Select "Load unpacked extension" and select this folder
+* Select "Load unpacked extension" and select the chrome folder
+
+# Installation Firefox
+* Change the URL of the targeted Moodle installation in index.js
+* Go to Firefox addons page (about:addons)
+* Select "Install Add-on Form File..." and select the [firefox/@moodle-tick-assignments-1.0.0.xpi](firefox/@moodle-tick-assignments-1.0.0.xpi) file
 
 The extension should work now!
 
 # Authors
 * Rene Hollander
 * Paul Kalauner
+* Burkhard Hampl
 
 # License
 Copyright (c) 2015 Rene Hollander
